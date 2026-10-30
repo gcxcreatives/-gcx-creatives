@@ -293,3 +293,41 @@ body {
     );
   }
 }
+/* =================================
+   GCX — GLOBAL ALIGNMENT CORRECTION
+   ================================= */
+
+/* Keep all major sections on one grid */
+.section-shell {
+  width: min(1035px, calc(100% - 100px));
+  max-width: 1035px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Keep header and hero on the same boundaries */
+.site-header,
+.hero {
+  width: min(1035px, calc(100% - 100px));
+  max-width: 1035px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Laptop and tablet */
+@media (max-width: 900px) {
+  .section-shell,
+  .site-header,
+  .hero {
+    width: calc(100% - 64px);
+  }
+}
+
+/* Mobile */
+@media (max-width: 680px) {
+  .section-shell,
+  .site-header,
+  .hero {
+    width: calc(100% - 40px);
+  }
+}

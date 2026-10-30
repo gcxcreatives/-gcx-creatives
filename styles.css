@@ -553,3 +553,96 @@ body {
 .industry-card:hover {
   border-color: #2D7FFF;
 }
+
+
+/* =====================================
+   GCX — GLOBAL TYPOGRAPHY UPGRADE
+   ===================================== */
+
+/* Section headings */
+.section-heading h2 {
+  font-size: clamp(36px, 3.5vw, 48px);
+  line-height: 1.12;
+  letter-spacing: -0.045em;
+  font-weight: 800;
+}
+
+/* Section descriptions */
+.section-heading > p,
+.section-heading > div > p:not(.eyebrow) {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #C4C8D0;
+}
+
+/* Eyebrow labels */
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: .19em;
+}
+
+/* Industry category labels */
+.industry-card span {
+  font-size: 11px !important;
+  letter-spacing: .14em;
+}
+
+/* Industry titles */
+.industry-card h3 {
+  font-size: 19px;
+  line-height: 1.25;
+  font-weight: 800;
+}
+
+/* Service card headings */
+.service-card h3 {
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+/* Service descriptions */
+.service-card p {
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* Pricing */
+.pricing-card h3 {
+  font-size: 22px;
+}
+
+.pricing-card p,
+.pricing-card li {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* General body copy */
+body {
+  font-size: 14px;
+}
+
+/* Navigation */
+.navigation {
+  font-size: 12px;
+}
+
+/* Mobile typography */
+@media (max-width: 680px) {
+  .section-heading h2 {
+    font-size: clamp(30px, 8vw, 38px);
+  }
+
+  .section-heading > p,
+  .section-heading > div > p:not(.eyebrow) {
+    font-size: 13px;
+  }
+
+  .industry-card h3 {
+    font-size: 17px;
+  }
+
+  .service-card h3 {
+    font-size: 16px;
+  }
+}

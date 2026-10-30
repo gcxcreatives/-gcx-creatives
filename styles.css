@@ -935,3 +935,20 @@ body {
     opacity: 1 !important;
   }
 }
+
+
+/* GCX — Seamless Logo Integration */
+
+.brand img {
+    background: transparent !important;
+    mix-blend-mode: screen;
+    object-fit: contain;
+}
+
+@media (max-width: 680px) {
+    .brand img {
+        width: 105px !important;
+        height: 70px !important;
+        mix-blend-mode: screen;
+    }
+}

@@ -857,3 +857,24 @@ body {
         margin-bottom: 24px !important;
     }
 }
+
+
+/* GCX — Improve scroll indicator visibility */
+
+.scroll-cue {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 12px;
+    margin-top: 48px !important;
+    color: #D9D9D9 !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.18em !important;
+    opacity: 1 !important;
+}
+
+.scroll-cue span {
+    color: #2D7FFF !important;
+    font-size: 25px !important;
+    font-weight: 500 !important;
+}

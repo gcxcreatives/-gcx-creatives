@@ -518,3 +518,38 @@ body {
     font-size: 16px;
   }
 }
+
+
+/* =================================
+   GCX — BRAND ACCENT REFINEMENT
+   ================================= */
+
+/* Larger blue accent lines across all sections */
+.eyebrow i {
+  width: 32px !important;
+  height: 3px !important;
+  margin-right: 12px !important;
+  background: #2D7FFF !important;
+  vertical-align: middle;
+}
+
+/* More visible section eyebrow text */
+.eyebrow {
+  color: #89B7FF;
+  letter-spacing: .18em;
+  font-weight: 800;
+}
+
+/* Blue industry category labels */
+.industry-card span {
+  color: #6EA8FF !important;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+/* Blue border on hover */
+.industry-card:hover {
+  border-color: #2D7FFF;
+}

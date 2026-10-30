@@ -770,3 +770,90 @@ body {
 .service-card::after {
   display: none !important;
 }
+
+
+/* ==========================================
+   GCX — PREMIUM SEAMLESS LAYOUT REFINEMENT
+   ========================================== */
+
+/* Reduce excessive gaps between sections */
+#services,
+#industries,
+#pricing,
+#about,
+#booking {
+    padding-top: 85px !important;
+    padding-bottom: 85px !important;
+}
+
+/* Bring cards closer together */
+.service-grid,
+.industry-grid,
+.pricing-grid {
+    gap: 16px !important;
+}
+
+/* Softer, more integrated card appearance */
+.service-card,
+.industry-card,
+.pricing-card {
+    border: 1px solid rgba(255,255,255,0.09) !important;
+    box-shadow: none !important;
+}
+
+/* Subtle blue interaction */
+.service-card:hover,
+.industry-card:hover,
+.pricing-card:hover {
+    border-color: rgba(45,127,255,0.55) !important;
+}
+
+/* Better spacing around section headings */
+.section-heading {
+    margin-bottom: 32px !important;
+}
+
+/* Keep descriptions visually connected to headings */
+.section-heading > p {
+    margin-top: 12px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    #services,
+    #industries,
+    #pricing,
+    #about,
+    #booking {
+        padding-top: 70px !important;
+        padding-bottom: 70px !important;
+    }
+
+    .service-grid,
+    .industry-grid,
+    .pricing-grid {
+        gap: 14px !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    #services,
+    #industries,
+    #pricing,
+    #about,
+    #booking {
+        padding-top: 55px !important;
+        padding-bottom: 55px !important;
+    }
+
+    .service-grid,
+    .industry-grid,
+    .pricing-grid {
+        gap: 14px !important;
+    }
+
+    .section-heading {
+        margin-bottom: 24px !important;
+    }
+}

@@ -760,3 +760,13 @@ body {
     object-fit: cover !important;
   }
 }
+
+
+/* Remove unnecessary service card arrows */
+.service-card > a {
+  display: none !important;
+}
+
+.service-card::after {
+  display: none !important;
+}

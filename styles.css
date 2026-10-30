@@ -331,3 +331,72 @@ body {
     width: calc(100% - 40px);
   }
 }
+/* =================================
+   GCX SERVICE CARDS — SIZE & LAYOUT
+   ================================= */
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+}
+
+.service-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 190px;
+    padding: 25px 22px;
+    background: #101114;
+    border: 1px solid #252830;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.service-card img.service-icon {
+    display: block;
+    width: 38px;
+    height: 38px;
+    max-width: 38px;
+    max-height: 38px;
+    object-fit: contain;
+    object-position: left center;
+    margin: 0 0 20px;
+    flex-shrink: 0;
+}
+
+.service-card h3 {
+    margin: 0 0 9px;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.service-card p {
+    margin: 0;
+    color: #A5A8B0;
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+.service-card a {
+    margin-top: auto;
+    align-self: flex-end;
+    color: #FFFFFF;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+@media (max-width: 700px) {
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+}
